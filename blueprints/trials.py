@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
 from flask.views import MethodView
 from flask.ext.pymongo import PyMongo
-from utils import bson_to_json
+from utils import generate_response
 from coiapi import create_app
 
 trials_blueprint = Blueprint('trials', __name__)
@@ -22,14 +22,15 @@ class TrialsAPI(MethodView):
             data = {}
         return data
 
-    def get(self, id=None):
+    def get(self, id=None, format=None):
         # TODO: add case-insensitive lookup
         if id:
             data = self._get_trial(id)
         else:
             data = self._get_trials(limit=request.args.get('limit', 50),\
                 skip=request.args.get('offset', 0))
-        return bson_to_json(data)
+        return generate_response(request, data, format=format)
 
 trials_blueprint.add_url_rule('', view_func=TrialsAPI.as_view('trials'), methods=['GET'])
 trials_blueprint.add_url_rule('/<id>', view_func=TrialsAPI.as_view('trials'), methods=['GET'])
+trials_blueprint.add_url_rule('/<id>.<format>', view_func=TrialsAPI.as_view('trials'), methods=['GET'])
