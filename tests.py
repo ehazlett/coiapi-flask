@@ -61,5 +61,40 @@ class UtilsTestCase(unittest.TestCase):
         self.assertEqual(resp.status, '200 OK')
         self.assertEqual(resp.content_type, 'application/json')
 
+    def test_generate_response_with_header_and_extension_same_and_valid(self):
+        env = create_environ(headers={'Accept': 'application/json'})
+        req = Request(env)
+        resp = utils.generate_response(request=req, data=None, \
+            format='json')
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status, '200 OK')
+        self.assertEqual(resp.content_type, 'application/json')
+
+    def test_generate_response_with_header_and_extension_different_and_valid(self):
+        env = create_environ(headers={'Accept': 'application/yaml'})
+        req = Request(env)
+        resp = utils.generate_response(request=req, data=None, \
+            format='json')
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status, '200 OK')
+        self.assertEqual(resp.content_type, 'application/json')
+
+    def test_generate_response_with_invalid_header_and_valid_extension(self):
+        env = create_environ(headers={'Accept': 'application/foo'})
+        req = Request(env)
+        resp = utils.generate_response(request=req, data=None, \
+            format='json')
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status, '200 OK')
+        self.assertEqual(resp.content_type, 'application/json')
+
+    def test_generate_response_with_valid_header_and_invalid_extension(self):
+        env = create_environ(headers={'Accept': 'application/json'})
+        req = Request(env)
+        resp = utils.generate_response(request=req, data=None, \
+            format='foo')
+        self.assertEqual(resp.status_code, 406)
+        self.assertEqual(resp.status, '406 NOT ACCEPTABLE')
+
 if __name__=='__main__':
     unittest.main()
