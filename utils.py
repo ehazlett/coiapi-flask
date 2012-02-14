@@ -1,9 +1,7 @@
 from flask import request, json, g, Response
 import redis
 import settings
-from serializers.json import json_serialize
-from serializers.yaml import yaml_serialize
-from serializers.exhibit import exhibit_serialize
+from serializers import json_serialize, yaml_serialize, exhibit_serialize
 
 def redis_connect():
     return redis.Redis(host=settings.REDIS_HOST, \

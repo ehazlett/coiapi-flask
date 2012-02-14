@@ -35,6 +35,13 @@ class UtilsTestCase(unittest.TestCase):
     def test_check_content_type_foo(self):
         hdr = 'application/foo'
         self.assertEqual(utils.check_accept_header(hdr), None)
+
+    def test_generate_response_no_header_no_extension(self):
+        env = create_environ()
+        req = Request(env)
+        resp = utils.generate_response(request=req)
+        self.assertEqual(resp.status_code, 406)
+        self.assertEqual(resp.status, '406 NOT ACCEPTABLE')
     
     def test_generate_response_with_only_accept_header(self):
         env = create_environ(headers={'Accept': 'application/json'})
