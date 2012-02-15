@@ -1,0 +1,160 @@
+{
+  "_id": "NCT01347307", 
+  "arm_group": [
+    {
+      "arm_group_label": "benign extradural spine tumors", 
+      "arm_group_type": "Other", 
+      "description": "Benign extradural spine tumors such as chordomas, meningiomas, schwannomas, neurofibromas, paragangliomas, and arteriovenous malformations (AVMs)."
+    }, 
+    {
+      "arm_group_label": "Vertebral and/or paraspinal metastases", 
+      "arm_group_type": "Other", 
+      "description": "Vertebral and/or paraspinal metastases, with or without prior surgery and/or fractionated radiotherapy"
+    }
+  ], 
+  "brief_summary": {
+    "textblock": "\n      This study will evaluate the local control rate as well as acute and late toxicity rates of\n      stereotactic body radiotherapy (SBRT) for the treatment of spine metastases and benign spine\n      tumors.\n    "
+  }, 
+  "brief_title": "Stereotactic Body Radiotherapy for Spine Tumors", 
+  "completion_date": "September 2015", 
+  "condition": [
+    "Spinal Metastases", 
+    "Vertebral Metastases", 
+    "Benign Spinal Tumors", 
+    "Chordoma", 
+    "Meningioma", 
+    "Schwannoma", 
+    "Neurofibroma", 
+    "Paragangliomas", 
+    "Arteriovenous Malformations"
+  ], 
+  "condition_browse": {
+    "mesh_term": [
+      "Congenital Abnormalities", 
+      "Arteriovenous Malformations", 
+      "Aneurysm", 
+      "Hemangioma", 
+      "Chordoma", 
+      "Meningioma", 
+      "Neoplasm Metastasis", 
+      "Neoplasms, Second Primary", 
+      "Neurilemmoma", 
+      "Neurofibroma", 
+      "Paraganglioma", 
+      "Spinal Cord Neoplasms", 
+      "Spinal Neoplasms"
+    ]
+  }, 
+  "detailed_description": {
+    "textblock": "\n      This study is a single site, non-randomized, prospective, phase IV trial. Patients are\n      composed of 2 groups:Spine Metastases OR Benign Spine Tumors. Data collected will include\n      patient demographics, pathology data, tumor stage, SBRT dose fractionation scheme, dose\n      received by adjacent critical normal tissues, tumor recurrence data, and acute and late\n      toxicities.\n\n      Follow up data will be collected during the patient's standard office visits.  The\n      anticipated duration of this study is 5 years\n    "
+  }, 
+  "eligibility": {
+    "criteria": {
+      "textblock": "\n        Eligibility Criteria:\n\n          -  Patient age >= 18 years\n\n          -  Zubrod performance status of 0-3\n\n          -  Vertebral and/or paraspinal metastases, with or without prior surgery and/or\n             fractionated radiotherapy\n\n          -  Benign extradural spine tumors such as chordomas, meningiomas, schwannomas,\n             neurofibromas, paragangliomas, and arteriovenous malformations (AVMs).\n\n          -  Established histologic diagnosis of a benign or malignant tumor of the spine.\n\n          -  Arteriovenous malformation of the spine identified radiographically (no biopsy)\n\n          -  Well-defined lesion involving no more than 2 adjacent vertebral levels or spinal\n             segment\n\n          -  Minimal spinal canal compromise that is not rapidly progressive.  Ideally, the tumor\n             should not be within 5 mm of the spinal cord.\n\n          -  If chemotherapy is planned, ideally it should not have been given within 30 days of\n             starting radiation and should not resume until at least 2 weeks after completing\n             radiation.  In addition, it is not recommended to perform SBRT when targeted\n             anti-angiogenesis therapy is planned within 2 months of the procedure.\n\n          -  Signed study-specific consent form\n\n        Exclusion Criteria:\n\n          -  Lesion involving > 3 adjacent vertebral levels\n\n          -  Overt spinal instability\n\n          -  Neurologic deficit due to bony fragments/bony compression of neural structures\n\n          -  Prior radiotherapy at the involved level(s) within 3 months of radiosurgery, more\n             than one prior course of radiotherapy at the involved level(s), or more than 45 Gy\n             previous radiation exposure at the involved level(s)\n\n          -  Rapidly progressive spinal cord compromise or neurological deficit\n\n          -  Paralysis, or otherwise compromised motor function due to radiographically confirmed\n             cord compression\n\n          -  Patient unable to undergo an MRI\n\n          -  Pregnant or lactating women, due to potential exposure of the fetus to RT and unknown\n             effects of RT on lactating females\n\n          -  Patients with psychiatric or addictive disorder that would preclude obtaining\n             informed consent\n      "
+    }, 
+    "gender": "Both", 
+    "healthy_volunteers": "No", 
+    "maximum_age": "N/A", 
+    "minimum_age": "18 Years"
+  }, 
+  "enrollment": "50", 
+  "firstreceived_date": "May 2, 2011", 
+  "has_expanded_access": "No", 
+  "id_info": {
+    "nct_id": "NCT01347307", 
+    "org_study_id": "08-044"
+  }, 
+  "intervention": [
+    {
+      "arm_group_label": "Vertebral and/or paraspinal metastases", 
+      "description": "14-25 Gy / 1 fraction OR 21-27 Gy / 3 fractions (7-9 Gy per fraction)\tOR 25-30 Gy / 5 fractions (5-6 Gy per fraction)", 
+      "intervention_name": "stereotactic body radiotherapy", 
+      "intervention_type": "Radiation"
+    }, 
+    {
+      "arm_group_label": "benign extradural spine tumors", 
+      "description": "12-16 Gy / 1 fraction  OR 21-27 Gy / 3 fractions (7-9 Gy per fraction) OR 25-30 Gy / 5 fractions (5-6 Gy per fraction)", 
+      "intervention_name": "stereotactic body radiotherapy", 
+      "intervention_type": "Radiation"
+    }
+  ], 
+  "is_fda_regulated": "Yes", 
+  "is_section_801": "No", 
+  "keyword": [
+    "stereotactic radiosurgery", 
+    "spinal metastases", 
+    "vertebral metastases", 
+    "benign spinal tumors"
+  ], 
+  "lastchanged_date": "May 2, 2011", 
+  "location": {
+    "facility": {
+      "address": {
+        "city": "St. Louis", 
+        "country": "United States", 
+        "state": "Missouri", 
+        "zip": "63141"
+      }, 
+      "name": "St. John's Mercy Medical Center"
+    }, 
+    "latlong": "38.627,-90.198", 
+    "status": "Recruiting"
+  }, 
+  "location_countries": {
+    "country": "United States"
+  }, 
+  "number_of_arms": "2", 
+  "official_title": "Phase IV Trial Evaluating the Use of Stereotactic Body Radiotherapy for the Treatment of Spine Metastases and Primary Spine Tumors", 
+  "overall_contact": {
+    "email": "julie.mai@mercy.net", 
+    "last_name": "Julie Mai, MD", 
+    "phone": "314-251-6844"
+  }, 
+  "overall_status": "Recruiting", 
+  "oversight_info": {
+    "authority": "United States: Institutional Review Board", 
+    "has_dmc": "No"
+  }, 
+  "phase": "Phase 4", 
+  "primary_completion_date": "September 2015", 
+  "primary_outcome": [
+    {
+      "description": "Evaluation of pain relief will be assessed using a 10-point visual analog scale.\nAnalgesic use will be documented to ensure that pain improvement is not due to an increase in the amount of analgesic usage.\nEvaluation of neurologic improvement will be assessed by physical exam using the ASIA Impairment Scale.", 
+      "measure": "symptom control", 
+      "safety_issue": "No", 
+      "time_frame": "6 weeks post RT"
+    }, 
+    {
+      "description": "Local recurrence is defined as tumor recurrence or progression within the planning target volume.\nLocal control rate will be evaluated by imaging techniques and/or clinical symptoms(worsening or no improvement in pain or neurologic compromise).  If follow-up imaging is available, a local recurrence will be defined as an increase of > 20% in tumor size.", 
+      "measure": "local tumor recurrence rate", 
+      "safety_issue": "No", 
+      "time_frame": "5 years"
+    }
+  ], 
+  "required_header": {
+    "download_date": "Information obtained from ClinicalTrials.gov on February 12, 2012", 
+    "link_text": "Link to the current ClinicalTrials.gov record.", 
+    "url": "http://clinicaltrials.gov/show/NCT01347307"
+  }, 
+  "responsible_party": {
+    "name_title": "Julie Mai, MD", 
+    "organization": "St. John's Mercy Medical Center"
+  }, 
+  "secondary_outcome": {
+    "description": "Toxicity will be assessed using CTCAE grading criteria at specified timepoints.", 
+    "measure": "late toxicity rate", 
+    "safety_issue": "Yes", 
+    "time_frame": "one year"
+  }, 
+  "source": "St. John's Mercy Research Institute, St. Louis", 
+  "sponsors": {
+    "lead_sponsor": {
+      "agency": "St. John's Mercy Research Institute, St. Louis", 
+      "agency_class": "Other"
+    }
+  }, 
+  "start_date": "September 2008", 
+  "study_design": "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment", 
+  "study_type": "Interventional", 
+  "verification_date": "May 2011"
+}
