@@ -32,5 +32,6 @@ class TrialsAPI(MethodView):
         return generate_response(request, data, format=format)
 
 trials_blueprint.add_url_rule('', view_func=TrialsAPI.as_view('trials'), methods=['GET'])
+trials_blueprint.add_url_rule('.<format>', view_func=TrialsAPI.as_view('trials'), methods=['GET'])
 trials_blueprint.add_url_rule('/<id>', view_func=TrialsAPI.as_view('trials'), methods=['GET'])
 trials_blueprint.add_url_rule('/<id>.<format>', view_func=TrialsAPI.as_view('trials'), methods=['GET'])

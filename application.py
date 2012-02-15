@@ -18,6 +18,16 @@ app.register_blueprint(trials_blueprint, url_prefix='/trials')
 mongo = PyMongo(app)
 rds = redis_connect()
 
+# -- error handlers
+@app.errorhandler(405)
+def handle_405(error):
+    return utils.generate_response(request, {'error': 'Method not allowed'})
+
+@app.errorhandler(406)
+def handle_406(error):
+    return 'Invalid or unspecified content type'
+# -- end error handlers
+
 @app.before_request
 def before():
     addr = request.remote_addr
@@ -35,5 +45,3 @@ app.add_url_rule('/visitors', view_func=MetricAPI.as_view('metrics'), methods=['
 
 if __name__=='__main__':
     app.run(host='0.0.0.0')
-
-

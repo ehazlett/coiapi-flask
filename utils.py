@@ -1,4 +1,4 @@
-from flask import request, json, g, Response
+from flask import request, json, g, Response, abort
 import redis
 import settings
 from serializers import json_serialize, yaml_serialize, exhibit_serialize
@@ -20,14 +20,8 @@ def check_accept_header(accept_header=None):
     return content_type
 
 def generate_response(request=None, data=None, format=None):
-    code = 200
     accept_header = request.headers.get("Accept")
-    ctype = None
-    if format:
-        ctype = format
-    else:
-        ctype = check_accept_header(accept_header)
-    # TODO: format data
+    ctype = format if format else check_accept_header(accept_header)
     serializers = {
         "json": json_serialize,
         "yaml": yaml_serialize,
@@ -36,9 +30,5 @@ def generate_response(request=None, data=None, format=None):
     if serializers.has_key(ctype):
         response = serializers[ctype](data)
     else:
-        code = 406
-        response = 'Content-type not accepted'
-    return Response(response, code, content_type='application/{0}'.format(ctype))
-
-        
-        
+        abort(406)
+    return Response(response, 200, content_type='application/{0}'.format(ctype))
