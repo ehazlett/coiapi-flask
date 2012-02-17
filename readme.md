@@ -1,6 +1,6 @@
 COI API
 ===========
-This is a simple Flask (http://flask.pocoo.org) application demonstrating exposing a MongoDB baced API.  The application will store and retrieve data from MongoDB as well as perform simple IP-based throttling (configurable via a decorator).
+This is a simple Flask (http://flask.pocoo.org) application demonstrating exposing a MongoDB backed API.  The application will store and retrieve data from MongoDB as well as perform simple IP-based throttling (configurable via a decorator).
 
 Setup
 ------
